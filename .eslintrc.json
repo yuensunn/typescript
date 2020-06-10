@@ -1,0 +1,84 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "airbnb",
+        "prettier"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "react",
+        "react-native",
+        "react-hooks",
+        "prettier"
+    ],
+    "rules": {
+        "prettier/prettier": 2,
+        "semi": [
+            2,
+            "never"
+        ],
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx",
+                    ".tsx",
+                    ".ts",
+                    ".json"
+                ]
+            }
+        ],
+        "no-unused-vars": 0,
+        "@typescript-eslint/no-empty-function": 1,
+        "@typescript-eslint/no-unused-vars": 2,
+        "react/prop-types": 0,
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                " devDependencies": [
+                    ".storybook/**",
+                    "stories/**" 
+                ]
+            }
+        ],
+        "import/extensions": [
+            2,
+            "ignorePackages",
+            {
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
+            }
+        ]
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [
+                    ".js",
+                    ".jsx",
+                    ".ts",
+                    ".tsx"
+                ],
+                "moduleDirectory": [
+                    "node_modules",
+                    "."
+                ]
+            }
+        }
+    }
+}

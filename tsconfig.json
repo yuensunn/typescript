@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "jsx": "react",
+        "noEmit": true,
+        "strict": true,
+        "moduleResolution": "node",
+        "baseUrl": "./",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "rootDirs": ["src", "stories"],
+        "paths": {
+            "app/*": [
+                "src/app/*"
+            ],
+            "features/*": [
+                "src/features/*"
+            ],
+            "components/*": [
+                "src/components/*"
+            ],
+        },
+    },
+    "exclude": [
+        "node_modules"
+    ],
+}
